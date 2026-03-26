@@ -1,192 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BeeWell Community - Legal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      color: #1f2937;
+    }
+
+    .container {
+      max-width: 900px;
       margin: auto;
       padding: 20px;
-      line-height: 1.6;
-      color: #333;
     }
-    h1, h2, h3 {
-      color: #222;
-    }
-    h1 {
+
+    header {
       text-align: center;
+      padding: 40px 20px 10px;
     }
-    hr {
-      margin: 40px 0;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
     }
+
+    header p {
+      color: #6b7280;
+      margin-top: 5px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 100;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    nav a:hover {
+      color: #111827;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin: 25px 0;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 25px;
+    }
+
     ul {
-      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: #9ca3af;
+      padding: 30px;
+      font-size: 0.9rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 
 <body>
 
-<h1>BeeWell Community</h1>
-<p><strong>Effective Date:</strong> March 25, 2026</p>
+<header>
+  <h1>🐝 BeeWell Community</h1>
+  <p>Legal Information • Effective March 25, 2026</p>
+</header>
 
-<hr>
+<nav>
+  <a href="#privacy">Privacy Policy</a>
+  <a href="#terms">Terms of Service</a>
+</nav>
 
-<h2>📜 Privacy Policy</h2>
+<div class="container">
 
-<p>BeeWell Community (“BeeWell”, “we”, “our”, or “us”), a product of TriWell, respects your privacy and is committed to protecting your personal information.</p>
+  <!-- Privacy Policy -->
+  <div class="card" id="privacy">
+    <h2>📜 Privacy Policy</h2>
 
-<h3>1. Information We Collect</h3>
+    <p>BeeWell Community (“BeeWell”, “we”, “our”, or “us”), a product of TriWell, respects your privacy.</p>
 
-<p><strong>Account Information:</strong></p>
-<ul>
-  <li>Full name</li>
-  <li>Date of birth (age verification)</li>
-  <li>City and state (not precise location)</li>
-  <li>Email address</li>
-  <li>Password (securely stored via Firebase)</li>
-</ul>
+    <h3>1. Information We Collect</h3>
 
-<p><strong>User Content:</strong></p>
-<ul>
-  <li>Messages (public and private)</li>
-  <li>Posts and images</li>
-  <li>Event creation and RSVP activity</li>
-</ul>
+    <strong>Account Information:</strong>
+    <ul>
+      <li>Full name</li>
+      <li>Date of birth</li>
+      <li>City and state</li>
+      <li>Email address</li>
+      <li>Password (secured via Firebase)</li>
+    </ul>
 
-<p><strong>Profile Information:</strong></p>
-<ul>
-  <li>Profile edits and updates</li>
-</ul>
+    <strong>User Content:</strong>
+    <ul>
+      <li>Messages (public and private)</li>
+      <li>Posts and images</li>
+      <li>Events and RSVPs</li>
+    </ul>
 
-<h3>2. Age Restrictions</h3>
-<ul>
-  <li>Users must be at least 13 years old</li>
-  <li>Only users 18+ may be approved by administrators</li>
-</ul>
+    <h3>2. Age Restrictions</h3>
+    <ul>
+      <li>Must be 13+</li>
+      <li>18+ required for approval</li>
+    </ul>
 
-<p>We do not knowingly collect data from users under 13.</p>
+    <h3>3. Messaging & Content</h3>
+    <ul>
+      <li>Public content may be moderated</li>
+      <li>Private messages are not monitored</li>
+      <li>Users can report content</li>
+    </ul>
 
-<h3>3. Messaging & Content</h3>
-<ul>
-  <li>Public content may be moderated</li>
-  <li>Private messages are not monitored</li>
-  <li>Users can report inappropriate content</li>
-</ul>
+    <h3>4. Location</h3>
+    <ul>
+      <li>City/state only</li>
+      <li>No GPS tracking</li>
+      <li>Admins can view location</li>
+    </ul>
 
-<h3>4. Location Information</h3>
-<ul>
-  <li>Only city/state is collected</li>
-  <li>No GPS tracking</li>
-  <li>Users can hide location from others</li>
-  <li>Admins can still view location</li>
-</ul>
+    <h3>5. Use of Information</h3>
+    <ul>
+      <li>Account management</li>
+      <li>Messaging and events</li>
+      <li>Platform safety</li>
+    </ul>
 
-<h3>5. How We Use Your Information</h3>
-<ul>
-  <li>Account management</li>
-  <li>Messaging and social features</li>
-  <li>Event coordination</li>
-  <li>Platform safety and improvements</li>
-</ul>
+    <h3>6. Data Storage</h3>
+    <p>Stored securely using Firebase.</p>
 
-<h3>6. Data Storage</h3>
-<p>Data is securely stored using Firebase. We implement reasonable security safeguards.</p>
+    <h3>7. Data Sharing</h3>
+    <p>No selling or sharing of data. No ads or tracking.</p>
 
-<h3>7. Data Sharing</h3>
-<ul>
-  <li>No selling or sharing of personal data</li>
-  <li>No ads or tracking technologies</li>
-</ul>
+    <h3>8. Account Deletion</h3>
+    <p>Accounts can be deleted anytime. Some content may remain.</p>
 
-<h3>8. Account Deletion</h3>
-<ul>
-  <li>Accounts can be deleted at any time</li>
-  <li>Personal data is removed immediately</li>
-  <li>Past content may remain but is not tied to an active account</li>
-</ul>
+    <h3>9. Contact</h3>
+    <p>support@yourapp.com</p>
+  </div>
 
-<h3>9. Availability</h3>
-<p>Currently intended for users in the United States.</p>
+  <!-- Terms -->
+  <div class="card" id="terms">
+    <h2>📄 Terms of Service</h2>
 
-<h3>10. Your Rights</h3>
-<ul>
-  <li>Access your data</li>
-  <li>Update your profile</li>
-  <li>Delete your account</li>
-</ul>
+    <p>By using BeeWell, you agree to these Terms.</p>
 
-<h3>11. Changes</h3>
-<p>This policy may be updated periodically.</p>
+    <h3>1. Eligibility</h3>
+    <ul>
+      <li>Must be 13+</li>
+      <li>18+ for approval</li>
+    </ul>
 
-<h3>12. Contact</h3>
-<p>Email: support@yourapp.com</p>
+    <h3>2. Accounts</h3>
+    <ul>
+      <li>You are responsible for your account</li>
+      <li>Keep credentials secure</li>
+    </ul>
 
-<hr>
+    <h3>3. Conduct</h3>
+    <ul>
+      <li>No harassment</li>
+      <li>No illegal content</li>
+      <li>No impersonation</li>
+    </ul>
 
-<h2>📄 Terms of Service</h2>
+    <h3>4. Moderation</h3>
+    <ul>
+      <li>Public content may be removed</li>
+      <li>Private messages not monitored</li>
+    </ul>
 
-<p>Welcome to BeeWell Community. By using the app, you agree to these Terms.</p>
+    <h3>5. Content Rights</h3>
+    <p>You own your content but allow us to display it in-app.</p>
 
-<h3>1. Eligibility</h3>
-<ul>
-  <li>Must be 13+</li>
-  <li>Must be 18+ for approval</li>
-  <li>Must provide accurate information</li>
-</ul>
+    <h3>6. Termination</h3>
+    <p>Accounts may be removed if rules are violated.</p>
 
-<h3>2. User Accounts</h3>
-<ul>
-  <li>You are responsible for your account</li>
-  <li>Keep login credentials secure</li>
-</ul>
+    <h3>7. Liability</h3>
+    <p>Service is provided “as is”.</p>
 
-<h3>3. User Conduct</h3>
-<ul>
-  <li>No harassment or abuse</li>
-  <li>No illegal or inappropriate content</li>
-  <li>No impersonation</li>
-  <li>No unauthorized access attempts</li>
-</ul>
+    <h3>8. Contact</h3>
+    <p>support@yourapp.com</p>
+  </div>
 
-<h3>4. Content & Moderation</h3>
-<ul>
-  <li>Public content may be removed by admins</li>
-  <li>Users can report content</li>
-  <li>Private messages are not monitored</li>
-</ul>
+</div>
 
-<h3>5. User Content</h3>
-<p>You retain ownership but grant BeeWell a license to display and operate content within the app.</p>
-
-<h3>6. Location</h3>
-<ul>
-  <li>City/state only</li>
-  <li>No precise tracking</li>
-</ul>
-
-<h3>7. Termination</h3>
-<ul>
-  <li>You may delete your account anytime</li>
-  <li>We may suspend accounts if needed</li>
-</ul>
-
-<h3>8. Disclaimers</h3>
-<p>Service is provided “as is” without guarantees.</p>
-
-<h3>9. Liability</h3>
-<p>BeeWell is not liable for user interactions or damages.</p>
-
-<h3>10. Privacy</h3>
-<p>Use is also governed by our Privacy Policy.</p>
-
-<h3>11. Changes</h3>
-<p>Terms may be updated over time.</p>
-
-<h3>12. Contact</h3>
-<p>Email: support@yourapp.com </p>
+<footer>
+  © 2026 BeeWell Community • A TriWell Initiative
+</footer>
 
 </body>
 </html>
